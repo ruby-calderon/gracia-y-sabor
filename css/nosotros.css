@@ -1,0 +1,152 @@
+.historia {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding: 0 40px;
+    margin-bottom: 100px;
+}
+
+.historia article {
+    flex: 1;
+    justify-content: left;
+}
+
+.historia article blockquote {
+    padding: 0 140px;
+}
+
+.historia article p {
+    padding: 0 130px;
+    font-size: 20px;
+}
+
+.historia h2 {
+    font-size: 32px;
+    font-style: italic;
+    color: var(--naranja);
+    margin-bottom: 20px;
+}
+
+.historia p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.historia aside {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.historia aside figure:first-child {
+    grid-column: span 2;
+}
+
+.historia aside figure:first-child img {
+    height: 400px;
+}
+
+.historia aside figure img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* ==================
+   MISION
+   ================== */
+.mision {
+    background-color: var(--amarillo);
+    padding: 40px;
+    text-align: center;
+}
+
+.mision h1 {
+    font-family: 'Chewy', cursive;
+    font-size: 60px;
+    color: var(--naranja);
+}
+
+.mision-header {
+    margin: 50px 0;
+}
+
+.contenedor-mision {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin: 0 auto 50px;
+    padding: 0 150px;
+}
+
+.mision article {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.mision article h2 {
+    font-family: 'Chewy', cursive;
+    font-size: 30px;
+    color: var(--negro);
+}
+
+.mision article p {
+    font-size: 20px;
+}
+
+.mision img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+/* ==================
+   RESPONSIVE
+   ================== */
+@media (max-width: 1300px) {
+    .historia {
+        display: block;
+        padding: 0 20px;
+    }
+
+    .historia aside {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .historia aside figure:first-child {
+        grid-column: span 1;
+    }
+
+    .historia aside figure:first-child img {
+        height: 300px;
+    }
+
+    .historia aside figure img {
+        height: 300px;
+    }
+
+    .historia article blockquote {
+        padding: 0 20px;
+    }
+
+    .historia article p {
+        padding: 0 20px;
+        font-size: 20px;
+    }
+
+    .contenedor-mision {
+        padding: 0px;
+    }
+}

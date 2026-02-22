@@ -1,0 +1,358 @@
+/* Fuentes de Google */
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Lato:wght@300;400;700;900&display=swap');
+
+/* ==================
+   PALETA DE COLORES
+   Los 2 últimos dígitos en hex controlan la opacidad:
+   FF=100%, F2=95%, D9=85%, B3=70%, 80=50%, 66=40%, 4D=30%, 33=20%, 1A=10%
+   ================== */
+:root {
+  --naranja: #F97316;
+  --naranja-hover: #EA580C;
+  --naranja-20: #F973164D;
+  --naranja-35: #F9731659;
+  --amarillo: #FFD628;
+  --fondo-claro: #FFF7ED;
+  --fondo-claro-95: #FFF7EDF2;
+  --fondo-oscuro: #1F1C18;
+  --fondo-oscuro-95: #1F1C18F2;
+  --fondo-oscuro-40: #1F1C1866;
+  --fondo-oscuro-10: #1F1C181A;
+  --blanco: #FFFFFF;
+  --blanco-85: #FFFFFFD9;
+  --blanco-30: #FFFFFF4D;
+  --blanco-20: #FFFFFF33;
+  --blanco-10: #FFFFFF1A;
+  --negro-70: #000000B3;
+  --negro-50: #00000080;
+  --negro-10: #0000001A;
+  --gris-texto: #374151;
+  --gris-claro: #9CA3AF;
+  --gris-medio: #6B7280;
+}
+
+/* ==================
+   ESTILOS GENERALES
+   ================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: var(--gris-texto);
+  background-color: var(--fondo-claro);
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ==================
+   CONTENEDOR
+   ================== */
+.contenedor {
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* ==================
+   NAVBAR
+   ================== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--fondo-claro-95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--naranja-20);
+  height: 80px;
+}
+
+.navbar .contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.logo {
+  font-family: 'Chewy', cursive;
+  font-size: 36px;
+  color: var(--naranja);
+  transform: rotate(-2deg);
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: rotate(0deg);
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.navbar-toggler {
+  display: none;
+  cursor: pointer;
+  color: var(--gris-texto);
+  padding: 8px;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav a {
+  color: var(--gris-texto);
+  font-weight: 700;
+  font-size: 16px;
+  padding: 8px 20px;
+  display: block;
+}
+
+.navbar-nav a:hover {
+  color: var(--naranja);
+}
+
+.boton-pedido {
+  display: inline-block;
+  background-color: var(--naranja);
+  color: var(--blanco);
+  border: none;
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-weight: 700;
+  font-size: 16px;
+  box-shadow: 0 4px 12px var(--naranja-20);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.boton-pedido:hover {
+  background-color: var(--naranja-hover);
+  transform: scale(1.05);
+  color: var(--blanco);
+}
+
+/* ==================
+   CONTENIDO PRINCIPAL
+   ================== */
+.contenido-principal {
+  padding-top: 80px;
+}
+
+/* ==================
+   ENCABEZADO DE PAGINA
+   ================== */
+.encabezado-pagina {
+  background-color: var(--fondo-claro);
+  padding: 40px;
+  text-align: center;
+}
+
+.encabezado-pagina h1 {
+  font-family: 'Chewy', cursive;
+  font-size: 60px;
+  color: var(--fondo-oscuro);
+  margin-bottom: 12px;
+}
+
+.seccion-titulo {
+  font-family: 'Chewy', cursive;
+  font-size: 40px;
+  color: var(--fondo-oscuro);
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.linea-decorativa {
+  width: 120px;
+  height: 6px;
+  background-color: var(--naranja);
+  border: none;
+  border-radius: 3px;
+  margin: 0 auto;
+}
+
+.linea-decorativa.separator {
+  width: 100%;
+}
+
+/* ==================
+  FOOTER
+  ================== */
+.footer {
+  background-color: var(--fondo-oscuro);
+  color: var(--blanco);
+  padding: 60px 0 0;
+  border-top: 4px solid var(--naranja);
+}
+
+.footer h2 {
+  font-family: 'Chewy', cursive;
+  font-size: 36px;
+  color: var(--naranja);
+  margin-bottom: 8px;
+}
+
+.footer-superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.footer-superior p {
+  color: var(--gris-claro);
+  font-size: 14px;
+}
+
+.footer-enlaces {
+  display: flex;
+  gap: 32px;
+}
+
+.footer-enlaces a {
+  color: var(--gris-claro);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.footer-enlaces a:hover {
+  color: var(--amarillo);
+}
+
+.footer-inferior {
+  border-top: 1px solid var(--blanco-10);
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-inferior p {
+  color: var(--gris-medio);
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-redes {
+  display: flex;
+  gap: 32px;
+}
+
+.footer-redes a {
+  color: var(--gris-claro);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.footer-redes a:hover {
+  color: var(--naranja);
+}
+
+/* ==================
+   RESPONSIVE
+   ================== */
+@media (max-width: 991px) {
+  .navbar-toggler {
+    display: block;
+  }
+
+  .navbar {
+    height: auto;
+    padding: 12px 0;
+  }
+
+  .navbar .contenedor {
+    flex-wrap: wrap;
+  }
+
+  .navbar-menu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: var(--fondo-claro);
+    padding: 16px;
+    border-radius: 12px;
+    margin-top: 8px;
+    box-shadow: 0 4px 16px var(--negro-10);
+  }
+
+  #menu-toggle:checked~.navbar-menu {
+    display: flex;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .navbar-nav a {
+    padding: 12px 16px;
+  }
+
+  .boton-pedido {
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  .seccion-titulo {
+    font-size: 36px;
+  }
+
+  .footer-superior {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-inferior {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-redes {
+    justify-content: center;
+  }
+
+  .footer-enlaces {
+    justify-content: center;
+  }
+}

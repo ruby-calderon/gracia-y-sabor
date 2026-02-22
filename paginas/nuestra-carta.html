@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ✏️ CAMBIAR: título de tu página -->
+    <title>Nombre de tu Página | Gracia y Sabor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1"
+        rel="stylesheet">
+    <!-- Estilos comunes (navbar, footer, colores, tipografía) -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/nuestra-carta.css">
+    <!-- AGREGAR: tu archivo CSS específico para esta página -->
+    <!-- <link rel="stylesheet" href="../css/nueva-pagina.css"> -->
+</head>
+
+<body>
+
+    <!-- ========================================
+       NAVBAR (NO MODIFICAR)
+       ======================================== -->
+    <nav class="navbar">
+        <div class="contenedor">
+            <a class="logo" href="inicio.html">Gracia y Sabor</a>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="navbar-toggler">
+                <span class="material-symbols-outlined">menu</span>
+            </label>
+            <div class="navbar-menu">
+                <ul class="navbar-nav">
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="nuestra-carta.html">Nuestra Carta</a></li>
+                    <li><a href="ubicacion.html">Ubicación</a></li>
+                </ul>
+                <a href="realizar-pedido.html" class="boton-pedido">Realizar Pedido</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========================================
+       CONTENIDO PRINCIPAL
+       MODIFICAR: agrega tu contenido aquí
+       ======================================== -->
+    <main class="contenido-principal">
+
+        <section class="encabezado-pagina">
+            <h1>Nuestra Carta</h1>
+            <hr class="linea-decorativa">
+        </section>
+
+        <section class="carta">
+            <div class="contenedor">
+
+                <!-- INPUTS OCULTOS -->
+                <input type="radio" name="tabs" id="tab-comida" checked>
+                <input type="radio" name="tabs" id="tab-bebidas">
+
+                <!-- BOTONES -->
+                <div class="tabs">
+                    <label for="tab-comida" class="tab-btn">Comida</label>
+                    <label for="tab-bebidas" class="tab-btn">Bebidas</label>
+                </div>
+
+                <!-- CONTENIDO COMIDA -->
+                <div class="tab-contenido comida">
+
+                    <div class="grid-carta">
+
+                        <div class="plato">
+                            <img src="../imagenes/lomo-saltado.jpg" alt="">
+                            <div class="info-plato">
+                                <h3>Lomo Saltado</h3>
+                                <p>Jugoso lomo salteado con papas fritas y arroz.</p>
+                                <span class="precio">S/ 28.00</span>
+                            </div>
+                        </div>
+
+                        <div class="plato">
+                            <img src="../imagenes/aji-gallina.jpg" alt="">
+                            <div class="info-plato">
+                                <h3>Ají de Gallina</h3>
+                                <p>Receta tradicional cremosa con arroz blanco.</p>
+                                <span class="precio">S/ 25.00</span>
+                            </div>
+                        </div>
+
+                        <div class="plato">
+                            <img src="../imagenes/chaufa.jpeg" alt="">
+                            <div class="info-plato">
+                                <h3>Arroz Chaufa</h3>
+                                <p>Arroz salteado con pollo, huevo y verduras.</p>
+                                <span class="precio">S/ 22.00</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- CONTENIDO BEBIDAS -->
+                <div class="tab-contenido bebidas">
+
+                    <div class="grid-carta">
+
+                        <div class="plato">
+                            <img src="../imagenes/chicha-morada.jpg" alt="">
+                            <div class="info-plato">
+                                <h3>Chicha Morada</h3>
+                                <p>Bebida tradicional refrescante.</p>
+                                <span class="precio">S/ 8.00</span>
+                            </div>
+                        </div>
+
+                        <div class="plato">
+                            <img src="../imagenes/limonada.jpg" alt="">
+                            <div class="info-plato">
+                                <h3>Limonada</h3>
+                                <p>Limonada natural preparada al momento.</p>
+                                <span class="precio">S/ 7.00</span>
+                            </div>
+                        </div>
+
+                        <div class="plato">
+                            <img src="../imagenes/gaseosas.jpg" alt="">
+                            <div class="info-plato">
+                                <h3>Gaseosa</h3>
+                                <p>Bebidas frías personales.</p>
+                                <span class="precio">S/ 6.00</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+    <!-- ========================================
+       FOOTER (NO MODIFICAR)
+       ======================================== -->
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="footer-superior">
+                <div>
+                    <h2>Gracia y Sabor</h2>
+                    <p>El auténtico sabor de barrio en el corazón de Lima.</p>
+                </div>
+                <div class="footer-enlaces">
+                    <a href="#">Términos y Condiciones</a>
+                    <a href="#">Libro de Reclamaciones</a>
+                </div>
+            </div>
+            <div class="footer-inferior">
+                <p>© 2025 Gracia y Sabor. Todos los derechos reservados.</p>
+                <div class="footer-redes">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">TikTok</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

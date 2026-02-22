@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Realizar Pedido | Gracia y Sabor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/realizar-pedido.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- ========================================
+      NAVBAR (NO MODIFICAR)
+      ======================================== -->
+  <nav class="navbar">
+    <div class="contenedor">
+      <a class="logo" href="inicio.html">Gracia y Sabor</a>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="navbar-toggler">
+        <span class="material-symbols-outlined">menu</span>
+      </label>
+      <div class="navbar-menu">
+        <ul class="navbar-nav">
+          <li><a href="inicio.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="nuestra-carta.html">Nuestra Carta</a></li>
+          <li><a href="ubicacion.html">Ubicación</a></li>
+        </ul>
+        <a href="realizar-pedido.html" class="boton-pedido">Realizar Pedido</a>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- ========================================
+      CONTENIDO PRINCIPAL
+      MODIFICAR: agrega tu contenido aquí
+      ======================================== -->
+  <main class="contenido-principal">
+
+    <section class="encabezado-pagina">
+      <h1> Realizar Pedido </h1>
+      <hr class="linea-decorativa">
+    </section>
+
+    <div class="main-container">
+
+      <form class="form-section">
+
+        <h3><span class="material-symbols-outlined mi-icono">person</span> <strong>Tus Datos</strong></h3>
+
+        <div class="field-container">
+
+          <div class="campos-en-linea">
+            <div class="field">
+              <label for="nombre"> <strong>Nombre Completo</strong></label>
+              <input type="text" id="nombre" name="nombre" required placeholder="Ej: Juan Perez">
+            </div>
+            <div class="field">
+              <label for="teléfono"> <strong>Teléfono/WhatsApp</strong></label>
+              <input type="text" id="telefono" name="telefono" required placeholder="999 999 999">
+            </div>
+          </div>
+
+
+          <div class="field">
+            <label for="dirección"> <strong>Dirección de Entrega</strong></label>
+            <input type="text" id="direccion" name="direccion" required placeholder="Calle, Número, Distrito">
+          </div>
+
+          <div class="field">
+            <label for="referencia"> <strong>Referencia (Opcional)</strong></label>
+            <textarea type="text" id="referencia" name="referencia" rows="3"></textarea>
+          </div>
+
+          <div class="field">
+            <label for="productos" class="form-label"> <strong>Elija el producto *</strong></label>
+            <select id="productos" class="form-select">
+              <option value="" selected> Seleccione una opción </option>
+              <option value="1"> Pollo Broaster Familiar </option>
+              <option value="2"> Caldo de Gallina especial </option>
+              <option value="3"> Arroz chaufa </option>
+              <option value="4"> Salchipapa </option>
+              <option value="5"> Pollo a la plancha </option>
+              <option value="6"> Chicha morada</option>
+              <option value="7"> Inca Kola</option>
+              <option value="8"> Coca Cola</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="Cantidad"> Cantidad*</label>
+            <input type="number" id="cantidad" name="cantidad" min="1" step="1" onkeydown="return false">
+          </div>
+
+          <div class="buttons-container">
+            <button type="reset" class="button">Limpiar datos</button>
+            <button type="button" class="button">Agregar Producto</button>
+          </div>
+        </div>
+
+      </form>
+
+      <aside class="order-section">
+
+        <div class="header-icon">
+          <h3><span class="material-symbols-outlined mi-icono">shopping_basket</span> <strong>Tu Pedido</strong></h3>
+        </div>
+
+        <div class="order-item">
+          <img src="../imagenes/realizar pedido-pollo-broaster.png" alt="Pollo Broaster" class="img-pedido">
+          <div class="info-text">
+            <strong> Pollo Broaster Familiar</strong>
+            <small>x 1 unidad </small>
+          </div>
+          <strong> S/. 45,00 </strong>
+        </div>
+
+        <div class="order-item">
+          <img src="../imagenes/caldodegallina.png" alt="Caldo de Gallina" class="img-pedido">
+          <div class="info-text">
+            <strong> Caldo de gallina especial</strong>
+            <small>x 1 unidad </small>
+          </div>
+          <strong> S/. 36,00 </strong>
+        </div>
+        <hr>
+
+        <div class="totals">
+          <div class="linea-total">
+            <strong> Subtotal</strong>
+            <span>S/. 81,00</span>
+          </div>
+
+          <div class="linea-total">
+            <strong> Delivery</strong>
+            <span>S/. 5,00</span>
+          </div>
+
+          <div class="linea-total">
+            <strong class="item-total-price"> Total </strong>
+            <span class="item-price">S/. 86,00</span>
+          </div>
+        </div>
+
+        <button type="submit" class="button btn-confirmar">
+          <i class="fa-brands fa-whatsapp"></i> CONFIRMAR PEDIDO POR WHATSAPP
+        </button>
+
+      </aside>
+
+    </div>
+
+  </main>
+
+
+
+
+
+  <!-- ========================================
+       FOOTER (NO MODIFICAR)
+       ======================================== -->
+  <footer class="footer">
+    <div class="contenedor">
+      <div class="footer-superior">
+        <div>
+          <h2>Gracia y Sabor</h2>
+          <p>El auténtico sabor de barrio en el corazón de Lima.</p>
+        </div>
+        <div class="footer-enlaces">
+          <a href="#">Términos y Condiciones</a>
+          <a href="#">Libro de Reclamaciones</a>
+        </div>
+      </div>
+      <div class="footer-inferior">
+        <p>© 2025 Gracia y Sabor. Todos los derechos reservados.</p>
+        <div class="footer-redes">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

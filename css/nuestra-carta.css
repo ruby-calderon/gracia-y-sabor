@@ -1,0 +1,85 @@
+/* OCULTAR RADIO BUTTONS */
+.carta input[type="radio"] {
+    display: none;
+}
+
+.carta {
+    margin-bottom: 50px;
+}
+
+/* ================= TABS ================= */
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.tab-btn {
+    padding: 10px 25px;
+    background: var(--gris-claro);
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.tab-btn:hover {
+    background: var(--naranja);
+    color: var(--blanco);
+}
+
+/* BOTON ACTIVO */
+#tab-comida:checked~.tabs label[for="tab-comida"],
+#tab-bebidas:checked~.tabs label[for="tab-bebidas"] {
+    background: var(--naranja);
+    color: var(--blanco);
+}
+
+/* ================= CONTENIDO ================= */
+
+.tab-contenido {
+    display: none;
+}
+
+#tab-comida:checked~.comida {
+    display: block;
+}
+
+#tab-bebidas:checked~.bebidas {
+    display: block;
+}
+
+
+/* ================= CARTA ================= */
+
+.grid-carta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.plato {
+    background: var(--blanco);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px var(--negro-10);
+    transition: 0.3s;
+}
+
+.plato img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.info-plato {
+    padding: 15px;
+}
+
+.precio {
+    font-weight: bold;
+    color: var(--naranja);
+    font-size: 18px;
+}
