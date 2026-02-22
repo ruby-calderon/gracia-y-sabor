@@ -127,7 +127,7 @@
 }
 
 /* ==================
-   CARACTERISTICAS (solo inicio.html)
+   CARACTERISTICAS (solo index.html)
    ================== */
 .caracteristicas {
   padding: 80px 0;
@@ -170,7 +170,7 @@
 }
 
 /* ==================
-   RESPONSIVE (solo inicio.html)
+   RESPONSIVE (solo index.html)
    ================== */
 @media (max-width: 991px) {
   .portada-titulo {
