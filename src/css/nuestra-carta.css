@@ -1,0 +1,141 @@
+/* ==================
+   ENCABEZADO
+   ================== */
+.encabezado-pagina {
+  background-color: var(--fondo-claro);
+  padding: 40px;
+  text-align: center;
+}
+
+.encabezado-pagina h1 {
+  font-family: 'Chewy', cursive;
+  font-size: 60px;
+  color: var(--fondo-oscuro);
+  margin-bottom: 12px;
+}
+
+.linea-decorativa {
+  width: 120px;
+  height: 6px;
+  background-color: var(--naranja);
+  border: none;
+  border-radius: 3px;
+  margin: 0 auto;
+}
+
+/* ==================
+   CARTA
+   ================== */
+.carta {
+  margin-bottom: 50px;
+  padding: 40px;
+}
+
+/* ================= TABS ================= */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.tab-btn {
+  padding: 10px 25px;
+  background: var(--gris-claro);
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  border: none;
+  font-size: 16px;
+}
+
+.tab-btn:hover {
+  background: var(--naranja);
+  color: var(--blanco);
+}
+
+.tab-btn.activo {
+  background: var(--naranja);
+  color: var(--blanco);
+}
+
+/* ================= GRID CARTA ================= */
+.grid-carta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.plato {
+  background: var(--blanco);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px var(--negro-10);
+  transition: 0.3s;
+}
+
+.plato:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px var(--negro-15);
+}
+
+.plato img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.info-plato {
+  padding: 15px;
+}
+
+.info-plato h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: var(--fondo-oscuro);
+}
+
+.info-plato p {
+  font-size: 14px;
+  color: var(--gris-texto);
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.precio {
+  font-weight: bold;
+  color: var(--naranja);
+  font-size: 18px;
+}
+
+/* ==================
+   RESPONSIVE
+   ================== */
+@media (max-width: 768px) {
+  .encabezado-pagina {
+    padding: 30px 20px;
+  }
+
+  .encabezado-pagina h1 {
+    font-size: 40px;
+  }
+
+  .carta {
+    padding: 20px;
+  }
+
+  .tabs {
+    gap: 10px;
+  }
+
+  .tab-btn {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+
+  .grid-carta {
+    grid-template-columns: 1fr;
+  }
+}

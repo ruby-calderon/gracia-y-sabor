@@ -1,3 +1,6 @@
+/* ==================
+   INICIO
+   ================== */
 .portada {
   position: relative;
   min-height: 100vh;
@@ -98,6 +101,7 @@
   gap: 8px;
   box-shadow: 0 8px 24px var(--naranja-35);
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .boton-menu:hover {
@@ -119,6 +123,7 @@
   gap: 8px;
   backdrop-filter: blur(8px);
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .boton-ubicacion:hover {
@@ -126,9 +131,6 @@
   color: var(--blanco);
 }
 
-/* ==================
-   CARACTERISTICAS (solo index.html)
-   ================== */
 .caracteristicas {
   padding: 80px 0;
   background-color: var(--amarillo);
@@ -169,9 +171,6 @@
   border-right: 2px solid var(--fondo-oscuro-10);
 }
 
-/* ==================
-   RESPONSIVE (solo index.html)
-   ================== */
 @media (max-width: 991px) {
   .portada-titulo {
     font-size: 40px;

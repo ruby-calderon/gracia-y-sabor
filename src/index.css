@@ -1,0 +1,86 @@
+/* Fuentes de Google */
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1');
+
+/* Paleta de colores */
+:root {
+  --naranja: #F97316;
+  --naranja-hover: #EA580C;
+  --naranja-20: #F973164D;
+  --naranja-35: #F9731659;
+  --amarillo: #FFD628;
+  --fondo-claro: #FFF7ED;
+  --fondo-claro-95: #FFF7EDF2;
+  --fondo-oscuro: #1F1C18;
+  --fondo-oscuro-95: #1F1C18F2;
+  --fondo-oscuro-40: #1F1C1866;
+  --fondo-oscuro-10: #1F1C181A;
+  --blanco: #FFFFFF;
+  --blanco-85: #FFFFFFD9;
+  --blanco-30: #FFFFFF4D;
+  --blanco-20: #FFFFFF33;
+  --blanco-10: #FFFFFF1A;
+  --negro-70: #000000B3;
+  --negro-50: #00000080;
+  --negro-10: #0000001A;
+  --gris-texto: #374151;
+  --gris-claro: #9CA3AF;
+  --gris-medio: #6B7280;
+}
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: var(--gris-texto);
+  background-color: var(--fondo-claro);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Contenedor */
+.contenedor {
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Contenido principal */
+.contenido-principal {
+  padding-top: 80px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
